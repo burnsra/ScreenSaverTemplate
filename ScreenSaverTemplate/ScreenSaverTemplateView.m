@@ -7,14 +7,18 @@
 //
 
 #import "ScreenSaverTemplateView.h"
+#import <WebKit/WebKit.h>
 
 @implementation ScreenSaverTemplateView
+
+WebView *_webView;
+NSString *_url;
 
 - (instancetype)initWithFrame:(NSRect)frame isPreview:(BOOL)isPreview
 {
     self = [super initWithFrame:frame isPreview:isPreview];
     if (self) {
-        [self setAnimationTimeInterval:1/30.0];
+        [self initialize];
     }
     return self;
 }
@@ -22,6 +26,10 @@
 - (void)startAnimation
 {
     [super startAnimation];
+    if (self) {
+        [self configureWebView];
+        [self loadWebView];
+    }
 }
 
 - (void)stopAnimation
@@ -49,4 +57,31 @@
     return nil;
 }
 
+- (void)configureWebUrl
+{
+    _url = [NSString stringWithFormat:@"file://%@/html/index.html", [[NSBundle bundleForClass:[self class]] resourcePath]];
+}
+
+- (void)configureWebView
+{
+    _webView = [[WebView alloc] initWithFrame:[self bounds]];
+    [_webView setShouldUpdateWhileOffscreen:YES];
+    [_webView setAutoresizingMask:NSViewWidthSizable|NSViewHeightSizable];
+    [_webView setAutoresizesSubviews:YES];
+    [_webView setDrawsBackground:NO];
+    [_webView setMaintainsBackForwardList:NO];
+    [self addSubview:_webView];
+}
+
+- (void)initialize
+{
+    [self configureWebUrl];
+    [self configureWebView];
+}
+
+- (void)loadWebView
+{
+    [_webView setMainFrameURL:[_url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
+    [_webView reloadFromOrigin:nil];
+}
 @end
