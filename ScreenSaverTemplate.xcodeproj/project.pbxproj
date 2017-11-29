@@ -13,6 +13,8 @@
 		003EC7EE1FCE443400504669 /* ScreenSaverTemplateConfigureSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 003EC7EB1FCE443400504669 /* ScreenSaverTemplateConfigureSheet.h */; };
 		003EC7EF1FCE443400504669 /* ScreenSaverTemplateConfigureSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EC7EC1FCE443400504669 /* ScreenSaverTemplateConfigureSheet.m */; };
 		003EC7F01FCE443400504669 /* ScreenSaverTemplateConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003EC7ED1FCE443400504669 /* ScreenSaverTemplateConfigureSheet.xib */; };
+		003EC7F41FCE488D00504669 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 003EC7F21FCE488D00504669 /* thumbnail.png */; };
+		003EC7F51FCE488D00504669 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 003EC7F31FCE488D00504669 /* thumbnail@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		003EC7EB1FCE443400504669 /* ScreenSaverTemplateConfigureSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenSaverTemplateConfigureSheet.h; sourceTree = "<group>"; };
 		003EC7EC1FCE443400504669 /* ScreenSaverTemplateConfigureSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenSaverTemplateConfigureSheet.m; sourceTree = "<group>"; };
 		003EC7ED1FCE443400504669 /* ScreenSaverTemplateConfigureSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenSaverTemplateConfigureSheet.xib; sourceTree = "<group>"; };
+		003EC7F21FCE488D00504669 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		003EC7F31FCE488D00504669 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 		003EC7F11FCE444900504669 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				003EC7F21FCE488D00504669 /* thumbnail.png */,
+				003EC7F31FCE488D00504669 /* thumbnail@2x.png */,
 				003EC7ED1FCE443400504669 /* ScreenSaverTemplateConfigureSheet.xib */,
 			);
 			path = UI;
@@ -154,7 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				003EC7F01FCE443400504669 /* ScreenSaverTemplateConfigureSheet.xib in Resources */,
+				003EC7F51FCE488D00504669 /* thumbnail@2x.png in Resources */,
 				003EC7EA1FCE415600504669 /* html in Resources */,
+				003EC7F41FCE488D00504669 /* thumbnail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
