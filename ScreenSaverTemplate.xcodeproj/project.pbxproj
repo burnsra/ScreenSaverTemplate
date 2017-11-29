@@ -15,7 +15,21 @@
 		003EC7F01FCE443400504669 /* ScreenSaverTemplateConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003EC7ED1FCE443400504669 /* ScreenSaverTemplateConfigureSheet.xib */; };
 		003EC7F41FCE488D00504669 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 003EC7F21FCE488D00504669 /* thumbnail.png */; };
 		003EC7F51FCE488D00504669 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 003EC7F31FCE488D00504669 /* thumbnail@2x.png */; };
+		003EC7FE1FCE4AE000504669 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EC7FD1FCE4AE000504669 /* AppDelegate.m */; };
+		003EC8001FCE4AE000504669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 003EC7FF1FCE4AE000504669 /* Assets.xcassets */; };
+		003EC8031FCE4AE000504669 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003EC8011FCE4AE000504669 /* MainMenu.xib */; };
+		003EC8061FCE4AE000504669 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EC8051FCE4AE000504669 /* main.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		003EC80D1FCE4C2600504669 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 001185511FCE3A9D00D4766F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 001185591FCE3A9D00D4766F;
+			remoteInfo = "ScreenSaver Template";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0011855A1FCE3A9D00D4766F /* ScreenSaver Template.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ScreenSaver Template.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +42,25 @@
 		003EC7ED1FCE443400504669 /* ScreenSaverTemplateConfigureSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenSaverTemplateConfigureSheet.xib; sourceTree = "<group>"; };
 		003EC7F21FCE488D00504669 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
 		003EC7F31FCE488D00504669 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
+		003EC7FA1FCE4AE000504669 /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		003EC7FC1FCE4AE000504669 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		003EC7FD1FCE4AE000504669 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		003EC7FF1FCE4AE000504669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		003EC8021FCE4AE000504669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		003EC8041FCE4AE000504669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		003EC8051FCE4AE000504669 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		003EC8071FCE4AE000504669 /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		001185561FCE3A9D00D4766F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		003EC7F71FCE4AE000504669 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				0011855C1FCE3A9D00D4766F /* ScreenSaverTemplate */,
+				003EC7FB1FCE4AE000504669 /* Runner */,
 				0011855B1FCE3A9D00D4766F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				0011855A1FCE3A9D00D4766F /* ScreenSaver Template.saver */,
+				003EC7FA1FCE4AE000504669 /* Runner.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +116,36 @@
 				003EC7F21FCE488D00504669 /* thumbnail.png */,
 				003EC7F31FCE488D00504669 /* thumbnail@2x.png */,
 				003EC7ED1FCE443400504669 /* ScreenSaverTemplateConfigureSheet.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		003EC7FB1FCE4AE000504669 /* Runner */ = {
+			isa = PBXGroup;
+			children = (
+				003EC8051FCE4AE000504669 /* main.m */,
+				003EC7FC1FCE4AE000504669 /* AppDelegate.h */,
+				003EC7FD1FCE4AE000504669 /* AppDelegate.m */,
+				003EC80B1FCE4BC600504669 /* Resources */,
+				003EC80C1FCE4BD400504669 /* UI */,
+			);
+			path = Runner;
+			sourceTree = "<group>";
+		};
+		003EC80B1FCE4BC600504669 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				003EC8041FCE4AE000504669 /* Info.plist */,
+				003EC8071FCE4AE000504669 /* Runner.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		003EC80C1FCE4BD400504669 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				003EC7FF1FCE4AE000504669 /* Assets.xcassets */,
+				003EC8011FCE4AE000504669 /* MainMenu.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -122,6 +183,24 @@
 			productReference = 0011855A1FCE3A9D00D4766F /* ScreenSaver Template.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
+		003EC7F91FCE4AE000504669 /* Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 003EC8081FCE4AE000504669 /* Build configuration list for PBXNativeTarget "Runner" */;
+			buildPhases = (
+				003EC7F61FCE4AE000504669 /* Sources */,
+				003EC7F71FCE4AE000504669 /* Frameworks */,
+				003EC7F81FCE4AE000504669 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				003EC80E1FCE4C2600504669 /* PBXTargetDependency */,
+			);
+			name = Runner;
+			productName = Runner;
+			productReference = 003EC7FA1FCE4AE000504669 /* Runner.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -135,6 +214,15 @@
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
+					003EC7F91FCE4AE000504669 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
 				};
 			};
 			buildConfigurationList = 001185541FCE3A9D00D4766F /* Build configuration list for PBXProject "ScreenSaverTemplate" */;
@@ -143,6 +231,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 001185501FCE3A9D00D4766F;
 			productRefGroup = 0011855B1FCE3A9D00D4766F /* Products */;
@@ -150,6 +239,7 @@
 			projectRoot = "";
 			targets = (
 				001185591FCE3A9D00D4766F /* ScreenSaver Template */,
+				003EC7F91FCE4AE000504669 /* Runner */,
 			);
 		};
 /* End PBXProject section */
@@ -166,6 +256,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		003EC7F81FCE4AE000504669 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				003EC8001FCE4AE000504669 /* Assets.xcassets in Resources */,
+				003EC8031FCE4AE000504669 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -178,7 +277,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		003EC7F61FCE4AE000504669 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				003EC8061FCE4AE000504669 /* main.m in Sources */,
+				003EC7FE1FCE4AE000504669 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		003EC80E1FCE4C2600504669 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 001185591FCE3A9D00D4766F /* ScreenSaver Template */;
+			targetProxy = 003EC80D1FCE4C2600504669 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		003EC8011FCE4AE000504669 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				003EC8021FCE4AE000504669 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		001185621FCE3A9D00D4766F /* Debug */ = {
@@ -312,6 +439,34 @@
 			};
 			name = Release;
 		};
+		003EC8091FCE4AE000504669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7HUH268L2E;
+				INFOPLIST_FILE = "$(SRCROOT)/Runner/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.macos.Runner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		003EC80A1FCE4AE000504669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7HUH268L2E;
+				INFOPLIST_FILE = "$(SRCROOT)/Runner/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.macos.Runner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +484,15 @@
 			buildConfigurations = (
 				001185651FCE3A9D00D4766F /* Debug */,
 				001185661FCE3A9D00D4766F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		003EC8081FCE4AE000504669 /* Build configuration list for PBXNativeTarget "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				003EC8091FCE4AE000504669 /* Debug */,
+				003EC80A1FCE4AE000504669 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
