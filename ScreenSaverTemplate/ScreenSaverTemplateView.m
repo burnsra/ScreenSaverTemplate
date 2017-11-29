@@ -6,6 +6,7 @@
 //  Copyright © 2017 Robert Burns. All rights reserved.
 //
 
+#import "ScreenSaverTemplateConfigureSheet.h"
 #import "ScreenSaverTemplateView.h"
 #import <WebKit/WebKit.h>
 
@@ -49,12 +50,16 @@ NSString *_url;
 
 - (BOOL)hasConfigureSheet
 {
-    return NO;
+    return YES;
 }
 
 - (NSWindow*)configureSheet
 {
-    return nil;
+    if (!configureSheet)
+    {
+        configureSheet = [[ScreenSaverTemplateConfigureSheet alloc] initWithWindowNibName:@"ScreenSaverTemplateConfigureSheet"];
+    }
+    return [configureSheet window];
 }
 
 - (void)configureWebUrl
