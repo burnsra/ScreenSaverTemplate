@@ -50,9 +50,17 @@
 			children = (
 				0011855D1FCE3A9D00D4766F /* ScreenSaverTemplateView.h */,
 				0011855F1FCE3A9D00D4766F /* ScreenSaverTemplateView.m */,
-				001185611FCE3A9D00D4766F /* Info.plist */,
+				003EC7E81FCE40BF00504669 /* Resources */,
 			);
 			path = ScreenSaverTemplate;
+			sourceTree = "<group>";
+		};
+		003EC7E81FCE40BF00504669 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				001185611FCE3A9D00D4766F /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +258,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7HUH268L2E;
-				INFOPLIST_FILE = ScreenSaverTemplate/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ScreenSaverTemplate/Resources/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.macos.ScreenSaverTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -264,7 +272,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7HUH268L2E;
-				INFOPLIST_FILE = ScreenSaverTemplate/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ScreenSaverTemplate/Resources/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.macos.ScreenSaverTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
