@@ -19,6 +19,7 @@
 		003EC8001FCE4AE000504669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 003EC7FF1FCE4AE000504669 /* Assets.xcassets */; };
 		003EC8031FCE4AE000504669 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003EC8011FCE4AE000504669 /* MainMenu.xib */; };
 		003EC8061FCE4AE000504669 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 003EC8051FCE4AE000504669 /* main.m */; };
+		00A739FF1FCF895A00BBC9DD /* ScreenSaver Template.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0011855A1FCE3A9D00D4766F /* ScreenSaver Template.saver */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,19 @@
 			remoteInfo = "ScreenSaver Template";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00A739FE1FCF893900BBC9DD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Screen Savers";
+			dstSubfolderSpec = 0;
+			files = (
+				00A739FF1FCF895A00BBC9DD /* ScreenSaver Template.saver in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0011855A1FCE3A9D00D4766F /* ScreenSaver Template.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ScreenSaver Template.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +187,7 @@
 				001185561FCE3A9D00D4766F /* Frameworks */,
 				001185571FCE3A9D00D4766F /* Headers */,
 				001185581FCE3A9D00D4766F /* Resources */,
+				00A739FE1FCF893900BBC9DD /* CopyFiles */,
 			);
 			buildRules = (
 			);
